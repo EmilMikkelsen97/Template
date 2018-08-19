@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+
+</head>
+
+<body>
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>Welcome</h1>
+            <p>Hello Dashboard</p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="/profile" role="button">Profile view »</a>
+            </p>
+        </div>
+        <div class="jumbotron">
+            <h2>Bare for at vise at jeg kan lave en forEach med express</h2>
+            <ul>
+                <% sodavand.forEach(function(soda) { %>
+                    <li>
+                        <%= soda.name %> -
+                            <%= soda.role %>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+        <% if (typeof (productPrice) != 'undefined') { %>
+            <p>Product Price: <%= productPrice %></p>
+        <% } %>
+        
+        <% if (typeof (productCount) != 'undefined') { %>
+            <p>Product Count: <%= productCount %></p>
+        <% } %>
+    </main>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

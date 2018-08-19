@@ -1,0 +1,25 @@
+#footer-container {
+    background-color: #222222;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-ul>li>b {
+    color: #fd1717;
+}
+
+.footer-ul a {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+#logud {
+    margin-left: 1100px;
+}
+
+main {
+    margin: 0 2% 0 2%;
+}
